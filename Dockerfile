@@ -4,6 +4,8 @@
 
 FROM ubuntu AS build
 
+EXPOSE 9091
+
 RUN apt-get update && apt-get install -y golang-go
 
 ENV GO111MODULE=off
